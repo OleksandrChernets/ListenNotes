@@ -14,6 +14,7 @@
 		5E45857A29D1D840005855D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E45857929D1D840005855D4 /* Assets.xcassets */; };
 		5E45857D29D1D840005855D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E45857B29D1D840005855D4 /* LaunchScreen.storyboard */; };
 		5E45858929D1D8DB005855D4 /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45858829D1D8DB005855D4 /* GenresPresenter.swift */; };
+		5E45858C29D1DA61005855D4 /* GenreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45858B29D1DA61005855D4 /* GenreModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5E45857C29D1D840005855D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E45857E29D1D840005855D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E45858829D1D8DB005855D4 /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
+		5E45858B29D1DA61005855D4 /* GenreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		5E45856F29D1D83F005855D4 /* ListenNotes */ = {
 			isa = PBXGroup;
 			children = (
+				5E45858A29D1DA45005855D4 /* Models */,
 				5E45858729D1D8C8005855D4 /* Presenters */,
 				5E45858429D1D878005855D4 /* Application */,
 				5E45858529D1D887005855D4 /* Views */,
@@ -100,6 +103,14 @@
 				5E45858829D1D8DB005855D4 /* GenresPresenter.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		5E45858A29D1DA45005855D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E45858B29D1DA61005855D4 /* GenreModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				5E45858929D1D8DB005855D4 /* GenresPresenter.swift in Sources */,
 				5E45857529D1D83F005855D4 /* GenresViewController.swift in Sources */,
 				5E45857129D1D83F005855D4 /* AppDelegate.swift in Sources */,
+				5E45858C29D1DA61005855D4 /* GenreModels.swift in Sources */,
 				5E45857329D1D83F005855D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
