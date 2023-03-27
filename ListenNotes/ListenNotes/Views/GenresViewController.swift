@@ -8,7 +8,7 @@
 import UIKit
 
 
-class GenresViewController: UITableViewController {
+final class GenresViewController: UITableViewController {
 
     // MARK: Properties
     var models = [Genre]()
@@ -26,8 +26,8 @@ class GenresViewController: UITableViewController {
         onRefresh()
     }
     
-    // MARK: Public functions
-    @objc func onRefresh() {
+    // MARK: Private functions
+    @objc private func onRefresh() {
         presenter.onRefresh()
     }
     
@@ -41,18 +41,21 @@ class GenresViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")!
         cell.textLabel?.text = models[indexPath.row].name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let genre = models[indexPath.row]
         presenter.onSelect(genre)
     }
 }
 
 extension GenresViewController: GenresView {
+    
     func display(_ genres: [Genre]) {
         models = genres
         tableView.reloadData()

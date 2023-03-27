@@ -11,7 +11,7 @@ protocol GenresView: AnyObject {
     func display(isLoading: Bool)
 }
 
-class GenresPresenter {
+final class GenresPresenter {
     weak var view: GenresView?
     
     func onRefresh() {
