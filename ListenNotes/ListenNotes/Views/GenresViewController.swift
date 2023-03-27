@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GenresViewController.swift
 //  ListenNotes
 //
 //  Created by Alexandr Chernets on 27.03.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GenresViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
